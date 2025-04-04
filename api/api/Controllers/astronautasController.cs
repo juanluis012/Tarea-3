@@ -49,6 +49,42 @@ namespace api.Controllers
 
 
         }
+
+        [HttpPost]
+        [Route("Actualizar")]
+        public dynamic Actualizar(astronautas astronautas)
+        {
+            try
+            {
+                var existente = _context.Astronauta.Find(astronautas.id_n);
+                if (existente == null)
+                {
+                    return new { mensaje = "Astronauta no encontrado" };
+                }
+
+                // Actualizar los valores
+                existente.nombre = astronautas.nombre;
+                existente.nacionalidad = astronautas.nacionalidad;
+                existente.descripcion = astronautas.descripcion;
+                existente.fecha_nacimiento = astronautas.fecha_nacimiento;
+                existente.edad = astronautas.edad;
+                existente.redes_sociales = astronautas.redes_sociales;
+                existente.Estado = astronautas.Estado;
+
+                _context.SaveChanges();
+
+                return new
+                {
+                    mensaje = "Astronauta actualizado correctamente",
+                    astronauta = existente
+                };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al intentar actualizar el astronauta: {ex.Message}");
+                return null;
+            }
+        }
     }
 }
 
