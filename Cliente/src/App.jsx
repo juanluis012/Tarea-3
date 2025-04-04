@@ -110,8 +110,7 @@ function App() {
                 <button className='btn-1' onClick={() => toggleModal(astronauta.id_n)}>
                   Más
                 </button>
-
-
+                <button className='btn-1' onClick={() => handleEdit(astronauta)}>Editar</button>
                 <Modal isOpen={openModals[astronauta.id_n]} onClose={() => toggleModal(astronauta.id_n)}>
                   {date ? (
                     <div>
@@ -127,6 +126,7 @@ function App() {
                             <strong>Fecha de Finalizada:</strong> {Misiones.fecha_terminada}
                           </p>
                         ))}
+                        <button onClick={() => handleDelete(astronauta.id_n)}>Eliminar</button>
                     </div>
                   ) : (
                     <p>Cargando datos...</p>
