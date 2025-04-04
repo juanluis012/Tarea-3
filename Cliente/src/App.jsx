@@ -7,29 +7,33 @@ import Modal from './Recurso/modal.jsx';
 import 'swiper/swiper-bundle.css';
 
 function App() {
+  // Estado para almacenar las misiones
   const [date, setDate] = useState(null);
+
+  // Obtiene las misiones desde el backend
   useEffect(() => {
     fetch("https://localhost:7255/api/Misiones")
       .then((response) => response.json())
       .then((date) => setDate(date));
   }, []);
-
+// Estado para almacenar los astronautas
   const [data, setData] = useState(null);
+    // Obtiene los astronautas desde el backend
   useEffect(() => {
     fetch("https://localhost:7255/api/astronautas")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
-
+  // Estados para controlar modales, filtros y edición
   const [openModals, setOpenModals] = useState({});
   const [filterNacionalidad, setFilterNacionalidad] = useState(null);
   const [filterEstado, setFilterEstado] = useState(null);
   const [editAstronauta, setEditAstronauta] = useState(null);
-
+ // Maneja el cambio de filtro por nacionalida
   const handleNacionalidadChange = (event) => {
     setFilterNacionalidad(event.target.value);
   };
-
+ // Maneja el cambio de filtro por estado
   const handleEstadoChange = (event) => {
     setFilterEstado(event.target.value);
   };
@@ -39,18 +43,18 @@ function App() {
     const estadoMatch = !filterEstado || astronauta.estado.toLowerCase().includes(filterEstado.toLowerCase());
     return nacionalidadMatch && estadoMatch;
   });
-
+// Alterna la visibilidad de un modal específico
   const toggleModal = (astronautaId) => {
     setOpenModals((prevModals) => ({
       ...prevModals,
       [astronautaId]: !prevModals[astronautaId],
     }));
   };
-
+// Abre el formulario para editar un astronauta
   const handleEdit = (astronauta) => {
     setEditAstronauta({ ...astronauta });
   };
-
+// Guarda los cambios realizados a un astronauta
   const handleSaveEdit = () => {
     fetch("https://localhost:7255/api/astronautas/Actualizar", {
       method: 'POST',
@@ -68,7 +72,7 @@ function App() {
       })
       .catch(error => console.error("Error:", error));
   };
-
+// Elimina un astronauta del sistema
   const handleDelete = (id) => {
     if (window.confirm("¿Estás seguro de que deseas eliminar este astronauta?")) {
       fetch(`https://localhost:7255/api/astronautas/Eliminar/${id}`, {
@@ -88,6 +92,7 @@ function App() {
 
   return (
     <>
+    {/* Encabezado con navegación */}
       <header>
         <nav>
           <a href='#'> Inicio</a>
@@ -96,19 +101,20 @@ function App() {
           <a href='#'> Servicios</a>
         </nav>
       </header>
-
+        {/* Imagen principal */}
       <div className="encabezado-img">
         <h2>Nasa</h2>
         <h2>Astronautas</h2>
         <p>Viendo las maravillas del espacio</p>
       </div>
-
+       {/* Contenedor principal con el carrusel */}
       <div className="container">
         <div className='cartel'>
           <hr />
         </div>
         <div className="swiper_mySwiper">
           <div className="swiper-wrapper">
+             {/* Muestra los astronautas filtrados */}
             {filteredData?.map((astronauta) => (
               <div className="swiper-slide" key={astronauta.id_n}>
                 <div className='product-content'>
@@ -129,6 +135,7 @@ function App() {
                 </div>
                 <button className='btn-1' onClick={() => toggleModal(astronauta.id_n)}>Más</button>
                 <button className='btn-1' onClick={() => handleEdit(astronauta)}>Editar</button>
+                 {/* Modal con detalles de misiones */}
                 <Modal isOpen={openModals[astronauta.id_n]} onClose={() => toggleModal(astronauta.id_n)}>
                   {date ? (
                     <div>
