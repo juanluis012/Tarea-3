@@ -27,6 +27,7 @@ function App() {
 
   const [filterNacionalidad, setFilterNacionalidad] = useState(null);
   const [filterEstado, setFilterEstado] = useState(null);
+  const [editAstronauta, setEditAstronauta] = useState(null);
 
 
   const handleNacionalidadChange = (event) => {
@@ -51,6 +52,44 @@ function App() {
       ...prevModals,
       [astronautaId]: !prevModals[astronautaId],
     }));
+    const handleEdit = (astronauta) => {
+      setEditAstronauta({ ...astronauta });
+    };
+  
+    const handleSaveEdit = () => {
+      fetch("https://localhost:7255/api/astronautas/Actualizar", {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(editAstronauta),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.mensaje === "Astronauta actualizado correctamente") {
+            setData(prevData => prevData.map(a => a.id_n === editAstronauta.id_n ? editAstronauta : a));
+            setEditAstronauta(null); // Cerrar el modal
+          } else {
+            alert("Error al actualizar astronauta");
+          }
+        })
+        .catch(error => console.error("Error:", error));
+    };
+  
+    const handleDelete = (id) => {
+      if (window.confirm("¿Estás seguro de que deseas eliminar este astronauta?")) {
+        fetch(`https://localhost:7255/api/astronautas/Eliminar/${id}`, {
+          method: 'DELETE',
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data.mensaje === "Astronauta eliminado correctamente") {
+              setData(prevData => prevData.filter((astronauta) => astronauta.id_n !== id));
+            } else {
+              alert("Error al eliminar astronauta");
+            }
+          })
+          .catch(error => console.error("Error:", error));
+      }
+    }
   };
 
   return (
