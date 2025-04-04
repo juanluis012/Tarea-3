@@ -85,6 +85,30 @@ namespace api.Controllers
                 return null;
             }
         }
+
+        [HttpDelete]
+        [Route("Eliminar/{id}")]
+        public dynamic Eliminar(int id)
+        {
+            try
+            {
+                var astronauta = _context.Astronauta.Find(id);
+                if (astronauta == null)
+                {
+                    return new { mensaje = "Astronauta no encontrado" };
+                }
+
+                _context.Astronauta.Remove(astronauta);
+                _context.SaveChanges();
+
+                return new { mensaje = "Astronauta eliminado correctamente" };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al intentar eliminar el astronauta: {ex.Message}");
+                return null;
+            }
+        }
     }
 }
 
