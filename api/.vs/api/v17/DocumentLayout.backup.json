@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\controllers\\astronautascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\controllers\\misionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\controllers\\misionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81776015-9C4C-43F0-B307-7CC3A000E4FB}|DB\\DB.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\db\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81776015-9C4C-43F0-B307-7CC3A000E4FB}|DB\\DB.csproj|solutionrelative:db\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81776015-9C4C-43F0-B307-7CC3A000E4FB}|DB\\DB.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\db\\astronautas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +19,20 @@
       "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\controllers\\misionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\controllers\\misionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81776015-9C4C-43F0-B307-7CC3A000E4FB}|DB\\DB.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\db\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81776015-9C4C-43F0-B307-7CC3A000E4FB}|DB\\DB.csproj|solutionrelative:db\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{171CE8C2-29F8-4699-9ECF-A43A1418CE0E}|api\\api.csproj|c:\\users\\juanl\\onedrive\\desktop\\copia astronautas\\astronauta-master-copia\\api\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -50,11 +50,15 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "api\\WeatherForecast.cs",
@@ -66,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "api\\Properties\\launchSettings.json",
@@ -78,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MisionesController.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\Controllers\\MisionesController.cs",
               "RelativeDocumentMoniker": "api\\Controllers\\MisionesController.cs",
@@ -90,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\appsettings.json",
               "RelativeDocumentMoniker": "api\\appsettings.json",
@@ -102,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "astronautas.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\DB\\astronautas.cs",
               "RelativeDocumentMoniker": "DB\\astronautas.cs",
@@ -114,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Misiones.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\DB\\Misiones.cs",
               "RelativeDocumentMoniker": "DB\\Misiones.cs",
@@ -126,15 +130,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\Program.cs",
               "RelativeDocumentMoniker": "api\\Program.cs",
               "ToolTip": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\Program.cs",
               "RelativeToolTip": "api\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T21:59:21.916Z"
+              "WhenOpened": "2024-10-22T21:59:21.916Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -144,7 +149,7 @@
               "RelativeDocumentMoniker": "api\\Controllers\\astronautasController.cs",
               "ToolTip": "C:\\Users\\juanl\\OneDrive\\Desktop\\Copia astronautas\\astronauta-master-copia\\api\\api\\Controllers\\astronautasController.cs",
               "RelativeToolTip": "api\\Controllers\\astronautasController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwG0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T21:59:21.917Z",
               "EditorCaption": ""
