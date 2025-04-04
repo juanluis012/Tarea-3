@@ -1,0 +1,18 @@
+{
+  "name": "astronauta-master",
+  "version": "1.0.0",
+  "description": "Descripción breve de tu proyecto. Este proyecto se baso en crear un pagina web que tuviera html,css,javacript,.net.sql server ## Instrucciones para ejecutar la aplicación React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vite": "^6.2.2"
+  }
+}

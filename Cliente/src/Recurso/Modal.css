@@ -1,0 +1,101 @@
+.react-modal-overlay {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.react-modal-overlay2 {
+    position: fixed;
+    top: -100%;
+   
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.react-modal-wrapper {
+    max-width: 500px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.react-modal-content {
+    
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 5px 20px; /* Reducción del tamaño del botón */
+    margin-top: 10px;
+    border: 1px solid #090635;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #090635;
+    font-size: 14px; /* Reducción del tamaño del texto del botón */
+  }
+  
+  .btn-2:hover {
+    background-color: #090635;
+    color: #fff;
+  }
+
+  .astronaut-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.astronaut-form label {
+    margin-bottom: 10px;
+}
+
+.filters input,
+.filters textarea {
+    width: 10%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.astronaut-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.astronaut-form button:hover {
+    background-color: #45a049;
+}
+.react-modal-content2 {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    padding: 10rem;
+
+}

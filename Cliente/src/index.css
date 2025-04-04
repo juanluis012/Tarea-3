@@ -1,0 +1,100 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #1b1b1b;
+    background-color: #fff;
+    overflow-x: hidden;
+ 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.swiper_mySwiper {
+  padding: 10px 0px 10px 15px; /* Ajuste del padding para reducir la altura del contenedor */
+  height: 400%;
+  
+}
+
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+
+}
+
+.swiper-slide {
+  flex-basis: calc(33.30% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total */
+}
+
+.product-txt span {
+  font-size: 20px; /* Reducción del tamaño del texto */
+  color: #ffb900;
+  font-weight: bold;
+}
+
+.product-txt h3 {
+  font-size: 16px; /* Reducción del tamaño del texto */
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product-txt p {
+  font-size: 12px; /* Reducción del tamaño del texto */
+  color: #000000;
+  padding: 0 10px;
+}
+
+.product-img {
+  text-align: center;
+  margin-top: 10px; /* Añadido espacio entre el texto y la imagen */
+}
+
+.product-img img {
+  width: 100px; /* Reducción del tamaño de la imagen */
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 5px 30px; /* Reducción del tamaño del botón */
+  margin-top: 10px;
+  border: 1px solid #090635;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #090635;
+  font-size: 14px; /* Reducción del tamaño del texto del botón */
+}
+
+.btn-1:hover {
+  background-color: #090635;
+  color: #fff;
+}
+
+/*@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swiper-slide:hover {
+  animation: hoverAnimation 2s;
+  border: 2px solid var(--secondary);
+}*/
